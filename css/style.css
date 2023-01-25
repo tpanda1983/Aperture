@@ -1,3 +1,9 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 header {
     background: #181818;
     padding: 24px 0;
@@ -19,21 +25,22 @@ header nav ul {
     display: flex;
     align-items: center;
 }
+
 header nav li {
     margin-left: 32px;
 }
+
 header nav li:first-of-type {
     margin-right: 24px;
 }
 
 header nav ul li a {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     color: #FFFFFF;
     text-decoration: none;
+    display: inline-block;
+
 }
 
 header nav ul li:first-of-type a {
@@ -52,6 +59,95 @@ header nav ul li:last-of-type a {
 .main-banner {
     background-image: url("../images/image-main.jpg");
     background-size: cover;
-    height: calc(100vh - 86px);
+    height: calc(100vh - 90px);
+    padding: 466px 0 71px;
+    box-sizing: border-box;
+}
+
+.main-banner .container {
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+}
+
+.main-banner h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    margin-bottom: 1px;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.main-banner p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.trigger {
+    background: #000000;
+    padding: 113px 0 108px;
+    box-sizing: border-box;
+}
+
+.trigger .container {
+    max-width: 571px;
+    margin: auto;
+    text-align: center;
+}
+
+.trigger h2 {
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.trigger h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #C0C0C0;
+    margin-bottom: 22px;
+}
+
+.btn-check {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 14px;
+    text-decoration: none;
+    padding: 5px 10px 5px 4px;
+    /*padding: 11px 10px 11px 42px;*/
+    display: inline-flex;
+    align-items: center;
+    /*position: relative;*/
+}
+
+/*.trigger a:before {*/
+/*    content: "";*/
+/*    background-image: url("../images/Frame.svg");*/
+/*    position: absolute;*/
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*    left: 4px;*/
+/*    top: 5px;*/
+/*   }*/
+
+.btn-check:before {
+    content: "";
+    background-image: url("../images/Frame.svg");
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
 }
 

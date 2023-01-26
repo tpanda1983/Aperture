@@ -135,7 +135,7 @@ header nav ul li:last-of-type a {
 
 /*.trigger a:before {*/
 /*    content: "";*/
-/*    background-image: url("../images/frame.svg");*/
+/*    background-image: url("../images/point.svg");*/
 /*    position: absolute;*/
 /*    width: 32px;*/
 /*    height: 32px;*/
@@ -145,7 +145,7 @@ header nav ul li:last-of-type a {
 
 .btn-check:before {
     content: "";
-    background-image: url("../images/frame.svg");
+    background-image: url("../images/point.svg");
     width: 32px;
     height: 32px;
     margin-right: 6px;

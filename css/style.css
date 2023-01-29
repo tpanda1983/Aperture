@@ -4,6 +4,7 @@ body {
     font-weight: 400;
 }
 
+/*section header*/
 header {
     background: #181818;
     padding: 24px 0;
@@ -40,7 +41,6 @@ header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
-
 }
 
 header nav ul li:first-of-type a {
@@ -56,6 +56,7 @@ header nav ul li:last-of-type a {
     color: #000000;
 }
 
+/*section main-banner*/
 .main-banner {
     background-image: url("../images/image-main.jpg");
     background-size: cover;
@@ -92,6 +93,95 @@ header nav ul li:last-of-type a {
     color: #C0C0C0;
 }
 
+.bottom-icon {
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-icon li {
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.bottom-icon li:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/icon1.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    top: 6px
+}
+
+.bottom-icon li:nth-child(2):before {
+    background-image: url("../images/icon2.svg");
+}
+
+.bottom-icon li:nth-child(3):before {
+    background-image: url("../images/icon3.svg");
+    width: 32px;
+}
+
+.bottom-icon li:nth-child(4):before {
+    background-image: url("../images/icon4.svg");
+    width: 10px;
+}
+
+/*section photo-nature*/
+.photo-nature {
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../images/mount.jpg");
+    background-size: cover;
+    padding: 260px 0 260px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.photo-nature .container {
+    width: 298px;
+    margin-right: 62px;
+}
+
+.photo-nature h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.photo-nature p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.photo-nature.monstera {
+    background-image: url("../images/monstera.jpg");
+}
+.monstera .container {
+    width: 273px;
+    margin-right: 87px;
+}
+
+.photo-nature.star-fall {
+    background-image: url("../images/star-fall.jpg");
+    padding: 250px 0 250px;
+}
+.star-fall .container {
+    width: 254px;
+    margin-right: 106px;
+}
+
+/*section trigger*/
 .trigger {
     background: #000000;
     padding: 113px 0 108px;
@@ -150,4 +240,3 @@ header nav ul li:last-of-type a {
     height: 32px;
     margin-right: 6px;
 }
-

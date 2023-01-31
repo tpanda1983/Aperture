@@ -61,14 +61,20 @@ header nav ul li:last-of-type a {
     background-image: url("../images/image-main.jpg");
     background-size: cover;
     height: calc(100vh - 90px);
-    padding: 466px 0 71px;
+    padding-bottom: 71px;
     box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .main-banner .container {
     max-width: 580px;
-    margin: auto;
+    /*margin: auto;*/
     text-align: center;
+    margin: inherit;
+    /*отключает маржин авто*!*/
 }
 
 .main-banner h4 {
@@ -133,6 +139,72 @@ header nav ul li:last-of-type a {
     width: 10px;
 }
 
+
+/*section what-we-do*/
+.what-we-do {
+    padding: 113px 0 100px;
+    background: #000000;
+    }
+
+.what-we-do h3 {
+    font-size: 23px;
+    line-height: 30px;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.flex-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1168px;
+}
+
+.what-we-do .flex-container article {
+    max-width: 576px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.what-we-do .flex-container article .content {
+    position: absolute;
+    width: calc(100% - 60px);
+    bottom: 30px;
+    left: 30px;
+}
+
+.what-we-do .flex-container article .content h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.what-we-do .flex-container article .content p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-bottom: 10px;
+}
+
+.what-we-do .flex-container article .content .btn-check {
+    font-size: 15px;
+}
+
+.what-we-do .flex-container article img {
+    width: 100%;
+    display: block;
+}
+
+.what-we-do .flex-container article:nth-of-type(n+2) {
+    margin-bottom: 0;
+}
+
+
 /*section photo-nature*/
 .photo-nature {
     min-height: 600px;
@@ -156,6 +228,7 @@ header nav ul li:last-of-type a {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .photo-nature p {
     font-size: 14px;
     line-height: 20px;
@@ -165,18 +238,20 @@ header nav ul li:last-of-type a {
 .photo-nature.monstera {
     background-image: url("../images/monstera.jpg");
 }
-.monstera .container {
-    width: 273px;
-    margin-right: 87px;
-}
+
+/*.monstera .container {*/
+/*    width: 273px;*/
+/*    margin-right: 87px;*/
+/*}*/
 
 .photo-nature.star-fall {
     background-image: url("../images/star-fall.jpg");
 }
-.star-fall .container {
-    width: 254px;
-    margin-right: 106px;
-}
+
+/*.star-fall .container {*/
+/*    width: 254px;*/
+/*    margin-right: 106px;*/
+/*}*/
 
 /*section trigger*/
 .trigger {
@@ -191,11 +266,12 @@ header nav ul li:last-of-type a {
     text-align: center;
 }
 
-.trigger h2 {
+.trigger, .what-we-do h2 {
     font-size: 40px;
     line-height: 42px;
     color: #FFFFFF;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .trigger h3 {
@@ -204,6 +280,7 @@ header nav ul li:last-of-type a {
     color: #C0C0C0;
     margin-bottom: 22px;
 }
+
 
 .btn-check {
     font-size: 16px;

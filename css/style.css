@@ -142,7 +142,7 @@ header nav ul li:last-of-type a {
 
 /*section what-we-do*/
 .what-we-do {
-    padding: 113px 0 100px;
+    padding: 113px 0 84px;
     background: #000000;
     }
 
@@ -170,7 +170,9 @@ header nav ul li:last-of-type a {
 
 .what-we-do .flex-container article .content {
     position: absolute;
-    width: calc(100% - 60px);
+    /*width: calc(100% - 60px);*/
+    box-sizing: border-box;
+    margin-right: 30px;
     bottom: 30px;
     left: 30px;
 }
@@ -191,19 +193,10 @@ header nav ul li:last-of-type a {
     margin-bottom: 10px;
 }
 
-.what-we-do .flex-container article .content .btn-check {
-    font-size: 15px;
-}
-
 .what-we-do .flex-container article img {
     width: 100%;
     display: block;
 }
-
-.what-we-do .flex-container article:nth-of-type(n+2) {
-    margin-bottom: 0;
-}
-
 
 /*section photo-nature*/
 .photo-nature {

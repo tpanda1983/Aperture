@@ -314,7 +314,7 @@ header nav ul li:last-of-type a {
     margin-bottom: 82px;
 }
 
-.past-clients ul {
+.past-clients .flex-container{
     display: flex;
     justify-content: space-between;
     align-items: center;

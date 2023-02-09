@@ -262,7 +262,7 @@ header nav ul li:last-of-type a {
 }
 
 .tools .content {
-    max-width: 514px;
+    max-width: calc(50% - 10px);
     color: #FFFFFF;
 }
 
@@ -292,7 +292,7 @@ header nav ul li:last-of-type a {
 .past-clients {
     background: #000000;
     padding-top: 113px;
-    padding-bottom: 140px;
+    padding-bottom: 120px;
 }
 
 .past-clients .container {
@@ -316,13 +316,16 @@ header nav ul li:last-of-type a {
 
 .past-clients .flex-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
-
-.past-clients li img {
+.past-clients a {
+    padding-bottom: 20px;
+    }
+.past-clients a img {
     display: block;
-}
+   }
 
 
 /*section trigger*/
@@ -372,6 +375,7 @@ header nav ul li:last-of-type a {
 .btn-check:before {
     content: "";
     background-image: url("../images/point.svg");
+    background-size: cover;
     width: 32px;
     height: 32px;
     margin-right: 6px;
@@ -402,6 +406,7 @@ footer .left-logo p {
     font-size: 13px;
     line-height: 20px;
     color: #C0C0C0;
+    padding-bottom: 20px;
 }
 
 footer .right-menu {
@@ -442,7 +447,9 @@ footer .right-menu li a {
 }
 
 footer .container.form {
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    /*padding: 36px 0;*/
 }
 
 footer .container.form h4 {
@@ -493,7 +500,7 @@ footer form button {
 
 footer .container.social {
     padding-top: 56px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     border-bottom: none;
 }
 
@@ -501,17 +508,12 @@ footer .container.social p {
     font-size: 14px;
     line-height: 20px;
     color: #C0C0C0;
-}
-
-footer .container.social p {
-    font-size: 14px;
-    line-height: 20px;
-    color: #C0C0C0;
+    padding-bottom: 20px;
 }
 
 footer .container.social ul {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-end;
 }
 

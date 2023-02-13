@@ -322,6 +322,8 @@ header nav ul li:last-of-type a {
 }
 .past-clients a {
     padding-bottom: 20px;
+    max-width: 128px;
+    display: inline-block;
     }
 .past-clients a img {
     display: block;
@@ -523,6 +525,46 @@ footer .container.social li {
 
 footer .container.social img {
     display: block;
+}
+
+/*script plagin карусель*/
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: 30px;
+    left: -10px;
+
+}
+
+
+.owl-nav .owl-prev:before {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f053";
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+
+}
+
+
+.owl-nav .owl-next:before {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f053";
+    font-size: 30px;
+    color: #FFFFFF;
+    display: inline-block;
+    transform: rotate(180deg);
 }
 
 

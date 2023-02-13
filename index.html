@@ -9,11 +9,18 @@
 	<link rel='preconnect' href='https://fonts.googleapis.com'>
 	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
 	<link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
+	<link rel='stylesheet' href='css/owl.carousel.css'>
+	<link rel='stylesheet' href='css/owl.theme.default.css'>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://resources/demos/style.css">
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel='stylesheet' href='css/media.css'>
 </head>
 <body>
+	<div id="dialog" title="Basic dialog">
+		<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+	</div>
 	<header>
 		<div class='container'>
 			<a href='#'>
@@ -24,7 +31,7 @@
 					<li><a href='#'>Featured images</a></li>
 					<li><a href='#'>Gear cage</a></li>
 					<li><a href='#'>Contact</a></li>
-					<li><a href='#'>Get template</a></li>
+					<li><a href='#' id="opener">Get template</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -143,7 +150,21 @@
 			<div class='container'>
 				<h2>Past clients</h2>
 				<h3>Trusted by your favourite companies</h3>
-				<div class='flex-container'>
+<!--				<div class="owl-carousel" style='color: white'>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--					<div> Your Content </div>-->
+<!--				</div>-->
+				<div class='flex-container owl-carousel'>
+					<a href='#'><img src='./images/past1.svg' alt='clients'></a>
+					<a href='#'><img src='./images/past2.svg' alt='clients'></a>
+					<a href='#'><img src='./images/past3.svg' alt='clients'></a>
+					<a href='#'><img src='./images/past4.svg' alt='clients'></a>
+					<a href='#'><img src='./images/past5.svg' alt='clients'></a>
 					<a href='#'><img src='./images/past1.svg' alt='clients'></a>
 					<a href='#'><img src='./images/past2.svg' alt='clients'></a>
 					<a href='#'><img src='./images/past3.svg' alt='clients'></a>
@@ -214,10 +235,20 @@
 			<p>© Aperture Photography, Inc. All rights reserved. Licensing</p>
 			<ul>
 				<li><a href='#'><img src='./images/twitter.svg' alt='twitter'></a></li>
-				<li><a href='#'><img src='./images/insta.svg' alt='twitter'></a></li>
-				<li><a href='#'><img src='./images/facebook.svg' alt='twitter'></a></li>
+				<li><a href='#'><img src='./images/insta.svg' alt='instagram'></a></li>
+				<li><a href='#'><img src='./images/facebook.svg' alt='facebook'></a></li>
 			</ul>
 		</div>
 	</footer>
+	<i class="fa-solid fa-chevron-left"></i>
+	<script src='https://kit.fontawesome.com/b167fcff7e.js' crossorigin='anonymous'></script>
+		<script
+		src="https://code.jquery.com/jquery-3.6.3.js"
+		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </body>
 </html>
